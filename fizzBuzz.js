@@ -12,3 +12,7 @@ for (var i=1; i<1000; i++) {
 
 
 console.log(Array.apply(null, Array(1000)).map((_, i) => (((i%3)?'':'fizz')+((i%5) ?'':'buzz'))).join(' '));
+
+
+
+console.log([...Array(1000)].map((x, i)=>i).map((_,i)=>(((i%3)?'':'fizz')+((i%5) ?'':'buzz'))).join(' '));
